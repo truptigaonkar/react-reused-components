@@ -6,7 +6,7 @@ var _react2 = require("@storybook/react");
 
 var _addonKnobs = require("@storybook/addon-knobs");
 
-var _README = _interopRequireDefault(require("./README.md"));
+var _READMEButton = _interopRequireDefault(require("./READMEButton.md"));
 
 var _storybookReadme = require("storybook-readme");
 
@@ -30,7 +30,7 @@ var basicTheme = (0, _theming.create)({
     theme: basicTheme
   },
   readme: {
-    sidebar: _README.default,
+    sidebar: _READMEButton.default,
     theme: {},
     codeTheme: 'github'
   }

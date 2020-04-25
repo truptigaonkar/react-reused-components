@@ -33,11 +33,16 @@ var basicTheme = (0, _theming.create)({
     theme: {},
     codeTheme: 'github'
   }
-}).addDecorator(_storybookReadme.addReadme).add('Input', function () {
+}).addDecorator(_storybookReadme.addReadme).add('Text', function () {
+  return /*#__PURE__*/_react.default.createElement(_Input.default, {
+    type: "text",
+    placeholder: "Enter input text",
+    onChange: (0, _addonActions.action)('Input provided')
+  });
+}).add('Textarea', function () {
   return /*#__PURE__*/_react.default.createElement(_Input.default, {
     type: "textarea",
-    value: "value",
-    placeholder: "Input placeholder",
+    placeholder: "Enter input textarea",
     onChange: (0, _addonActions.action)('Input provided')
   });
 });

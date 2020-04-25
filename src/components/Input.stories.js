@@ -23,15 +23,24 @@ storiesOf('Input', module)
     readme: { sidebar: Readme, theme: {}, codeTheme: 'github' },
   })
   .addDecorator(addReadme)
-  .add('Input', () => {
+  .add('Text', () => {
     return (
     <Input 
-      type="textarea" 
-      value="value"
-      placeholder="Input placeholder"
+      type="text" 
+      placeholder="Enter input text"
       onChange={action('Input provided')}
     />
     );
-  });
+  })
+  .add('Textarea', () => {
+    return (
+    <Input 
+      type="textarea" 
+      placeholder="Enter input textarea"
+      onChange={action('Input provided')}
+    />
+    );
+  })
+  ;
 
 

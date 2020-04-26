@@ -27,13 +27,13 @@ storiesOf('Footer', module)
     footerStyle={select(
         'Style',
         [
-          'btn--primary--solid',
-          'btn--secondary--solid',
-          'btn--success--solid',
-          'btn--warning--solid',
-          'btn--danger--solid',
+          'footer--primary',
+          'footer--secondary',
+          'footer--success',
+          'footer--warning',
+          'footer--danger',
         ],
-        'btn--primary--solid'
+        'footer--primary'
       )}
     >{text('Text', ' © Copyright 2020 ')}</Footer>;
   });

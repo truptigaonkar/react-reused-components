@@ -20,8 +20,7 @@ var Button = function Button(_ref) {
       type = _ref.type,
       onClick = _ref.onClick,
       buttonStyle = _ref.buttonStyle,
-      buttonSize = _ref.buttonSize,
-      href = _ref.href;
+      buttonSize = _ref.buttonSize;
   var checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
   var checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
   return /*#__PURE__*/_react.default.createElement("button", {

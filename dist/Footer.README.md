@@ -28,7 +28,7 @@ import React from 'react';
 import { Footer } from 'react-reused-components';
 
 function App() {
-  return <Footer footerStyle='footer--success'>© Copyright 2020 adfd</Footer>;
+  return <Footer style='btn--success--solid'>© Copyright 2020</Footer>;
 }
 
 export default App;

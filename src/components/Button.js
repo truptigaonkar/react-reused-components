@@ -16,7 +16,7 @@ const STYLES = [
 
 const SIZES = ['small', 'large', 'block'];
 
-export const Button = ({ children, disabled, type, onClick, buttonStyle, buttonSize, href }) => {
+export const Button = ({ children, disabled, type, onClick, buttonStyle, buttonSize }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];

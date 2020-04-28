@@ -7,6 +7,8 @@
 
 ## Example
 
+Button: solid
+
 ```jsx
 import React from 'react';
 import { Button } from 'react-reused-components';
@@ -14,6 +16,23 @@ import { Button } from 'react-reused-components';
 function App() {
   return (
     <Button buttonStyle='btn--success--solid' buttonSize='block'>
+      Button
+    </Button>
+  );
+}
+
+export default App;
+```
+
+Button: outline
+
+```jsx
+import React from 'react';
+import { Button } from 'react-reused-components';
+
+function App() {
+  return (
+    <Button buttonStyle='btn--success--outline' buttonSize='block'>
       Button
     </Button>
   );

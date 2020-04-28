@@ -21,11 +21,19 @@ Object.defineProperty(exports, "Footer", {
     return _Footer.default;
   }
 });
+Object.defineProperty(exports, "Alert", {
+  enumerable: true,
+  get: function get() {
+    return _Alert.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
 var _Input = _interopRequireDefault(require("./Input"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
+
+var _Alert = _interopRequireDefault(require("./Alert"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
-import Readme from './Footer.README.md';
+import Readme from './Alert.README.md';
 import { addReadme } from 'storybook-readme';
-import Footer from './Footer';
+import Alert from './Alert';
 import { create } from '@storybook/theming';
 
 const basicTheme = create({
@@ -12,7 +12,7 @@ const basicTheme = create({
   brandImage: null,
 });
 
-storiesOf('Footer', module)
+storiesOf('Alert', module)
   .addParameters({
     options: {
       showPanel: true,
@@ -23,27 +23,25 @@ storiesOf('Footer', module)
   })
   .addDecorator(addReadme)
   .add('Default', () => {
-    return <Footer
-    footerStyle={select(
+    return (
+      <Alert
+      alertStyle={select(
         'Style',
         [
-          'footer--primary',
-          'footer--secondary',
-          'footer--success',
-          'footer--warning',
-          'footer--danger',
+          'alert--primary',
+          'alert--secondary',
+          'alert--success',
+          'alert--warning',
+          'alert--danger',
+          'alert--info',
+          'alert--white',
+          'alert--dark',
         ],
-        'footer--primary'
+        'alert--primary'
       ) 
     } 
-    footerFixed={select(
-      'fixed-bottom',
-      [
-        'footer--basic',
-        'footer--fixed',
-      ],
-      'footer--basic',
-    ) 
-  }
-    >{text('Text', ' © Copyright 2020 ')}</Footer>;
+      >
+        {text('Text', ' Alert text ')}
+      </Alert>
+    )
   });

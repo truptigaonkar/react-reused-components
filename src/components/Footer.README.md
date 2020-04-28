@@ -1,4 +1,4 @@
-# Input component
+# Footer component
 
 ### Props
 

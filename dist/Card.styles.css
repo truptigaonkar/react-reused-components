@@ -1,0 +1,56 @@
+.product {
+  width: 18%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  padding: 1.8rem;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.product:hover {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: opacity 800ms ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s;
+  transition: transform 1s ease-in-out 0s;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #800000;
+}
+
+.product-price {
+  font-family: 'Franklin Gothic Medium';
+  color: rgba(89, 89, 89, 1);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  padding: 1rem 0rem 0rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.btn-addToCart {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn-addToCart:hover {
+  opacity: 0.7;
+}

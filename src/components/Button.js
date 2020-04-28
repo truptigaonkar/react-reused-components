@@ -7,11 +7,13 @@ const STYLES = [
   'btn--warning--solid',
   'btn--danger--solid',
   'btn--success--solid',
+  'btn--dark--solid',
   'btn--primary--outline',
   'btn--secondary--outline',
   'btn--warning--outline',
   'btn--danger--outline',
   'btn--success--outline',
+  'btn--dark--outline',
 ];
 
 const SIZES = ['small', 'large', 'block'];

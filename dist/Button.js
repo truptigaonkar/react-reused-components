@@ -11,7 +11,7 @@ require("./Button.styles.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var STYLES = ['btn--primary--solid', 'btn--secondary--solid', 'btn--warning--solid', 'btn--danger--solid', 'btn--success--solid', 'btn--primary--outline', 'btn--secondary--outline', 'btn--warning--outline', 'btn--danger--outline', 'btn--success--outline'];
+var STYLES = ['btn--primary--solid', 'btn--secondary--solid', 'btn--warning--solid', 'btn--danger--solid', 'btn--success--solid', 'btn--dark--solid', 'btn--primary--outline', 'btn--secondary--outline', 'btn--warning--outline', 'btn--danger--outline', 'btn--success--outline', 'btn--dark--outline'];
 var SIZES = ['small', 'large', 'block'];
 
 var Button = function Button(_ref) {

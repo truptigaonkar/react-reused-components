@@ -32,8 +32,20 @@ storiesOf('Footer', module)
           'footer--success',
           'footer--warning',
           'footer--danger',
+          'footer--white',
+          'footer--dark',
         ],
         'footer--primary'
-      )}
+      ) 
+    } 
+    footerFixed={select(
+      'fixed-bottom',
+      [
+        'footer--basic',
+        'footer--fixed',
+      ],
+      'footer--basic',
+    ) 
+  }
     >{text('Text', ' © Copyright 2020 ')}</Footer>;
   });

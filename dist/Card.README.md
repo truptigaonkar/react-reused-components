@@ -33,7 +33,7 @@ import { Card } from 'react-reused-components';
 function App() {
   return (
     <Card
-      productTitle=''
+      productTitle='cold fashion'
       productPrice='6666'
       src='https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-4-img_3x.jpg'
     >

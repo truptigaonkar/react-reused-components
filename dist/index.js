@@ -33,6 +33,12 @@ Object.defineProperty(exports, "Card", {
     return _Card.default;
   }
 });
+Object.defineProperty(exports, "Header", {
+  enumerable: true,
+  get: function get() {
+    return _Header.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -43,5 +49,7 @@ var _Footer = _interopRequireDefault(require("./Footer"));
 var _Alert = _interopRequireDefault(require("./Alert"));
 
 var _Card = _interopRequireDefault(require("./Card"));
+
+var _Header = _interopRequireDefault(require("./Header"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

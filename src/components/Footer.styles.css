@@ -8,20 +8,22 @@
   --dark: #181717;
 }
 
-footer{
-  padding: 1.6rem 0rem;
+footer {
+  padding: 2.6rem 0rem;
   width: 100%;
   text-align: center;
-} 
+  position: relative;
+}
 
-.footerText{
+.FooterText {
   font-family: Corbel;
-    color: #f5f2f1;
-    font-weight: 400;
-    font-size: 16px;
-    width: 10%;
-    display: inline-block;
-} 
+  font-weight: 400;
+  font-size: 16px;
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-80%, -20%);
+}
 
 .footer--primary {
   background-color: var(--primary);
@@ -65,8 +67,8 @@ footer{
   border: none;
 }
 
-.footer--fixed{
+.footer--fixed {
   position: fixed;
-   left: 0;
-   bottom: 0;
+  left: 0;
+  bottom: 0;
 }

@@ -1,4 +1,4 @@
-# productDetails component
+# Product Details component
 
 | Prop         | Type   | Description                         | Default |
 | ------------ | ------ | ----------------------------------- | ------- |

@@ -32,6 +32,8 @@ storiesOf('Footer', module)
           'footer--success',
           'footer--warning',
           'footer--danger',
+          'footer--white',
+          'footer--dark',
         ],
         'footer--primary'
       ) 

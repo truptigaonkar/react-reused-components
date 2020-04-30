@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
-import Readme from './Footer.README.md';
+import Readme from './ProductDetails.README.md';
 import { addReadme } from 'storybook-readme';
 import { action } from '@storybook/addon-actions';
 import ProductDetails from './ProductDetails';

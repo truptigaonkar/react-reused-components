@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
 import Readme from './Header.README.md';
 import { addReadme } from 'storybook-readme';
+import { action } from '@storybook/addon-actions';
 import Header from './Header';
 import { create } from '@storybook/theming';
 
@@ -39,6 +40,7 @@ storiesOf('Header', module)
     heading={text('Heading', 'Electronic collection 2020')}
     description={text('Description', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.')}
     mainHeading={text('Main Heading', 'welcome to brandy unique store')}
+    onClick={action('Solid Button clicked')}
       >
         {text('Button text', 'Shop Now')}
       </Header>

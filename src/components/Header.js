@@ -3,7 +3,7 @@ import './Header.styles.css';
 import { Button } from './Button';
 
 const Header = (props) => {
-  const { children, src, alt, heading, description, mainHeading } = props;
+  const { children, src, alt, heading, description, mainHeading, onClick } = props;
   return (
     <header>
       <img className='header-bg' src={src} alt={alt} />
@@ -13,7 +13,7 @@ const Header = (props) => {
           {mainHeading}
         </h1>
         <p className='description'>{description}</p>
-        <Button buttonStyle='btn--danger--solid' buttonSize='large'>{children}</Button>
+        <Button buttonStyle='btn--danger--solid' buttonSize='large' onClick={onClick}>{children}</Button>
       </div>
     </header>
   );

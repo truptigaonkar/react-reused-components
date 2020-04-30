@@ -56,26 +56,4 @@ header{
     margin-bottom: 5vw;
 }
 
-Button{
-    margin: 0 auto;
-    background-color: #a61458 !important;
-    box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
-    width: 10rem;
-    padding: 0.8rem;
-    font-family: Cambria;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: justify;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .btn-shopNow:hover{
-    opacity: 0.8;
-  }

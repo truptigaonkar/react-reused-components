@@ -52,6 +52,17 @@
    height: 70px;
 }
 
+input[type=number]{
+    position: relative;
+    padding: 15px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px; 
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #004085;
+}
+
 input[disabled] {
     opacity: 0.65;
     cursor: not-allowed;

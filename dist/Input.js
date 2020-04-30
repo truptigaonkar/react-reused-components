@@ -27,38 +27,39 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function Input(props) {
-  var _useState = (0, _react.useState)(props.type),
-      _useState2 = _slicedToArray(_useState, 1),
-      inputType = _useState2[0];
+var Input = function Input(props) {
+  var _useState = (0, _react.useState)(''),
+      _useState2 = _slicedToArray(_useState, 2),
+      inputValue = _useState2[0],
+      setInputValue = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(''),
-      _useState4 = _slicedToArray(_useState3, 2),
-      inputValue = _useState4[0],
-      setInputValue = _useState4[1];
-
-  var _useState5 = (0, _react.useState)(props.placeholder),
-      _useState6 = _slicedToArray(_useState5, 1),
-      placeholder = _useState6[0];
-
-  var _useState7 = (0, _react.useState)(false),
-      _useState8 = _slicedToArray(_useState7, 1),
-      disabled = _useState8[0];
+  var type = props.type,
+      label = props.label,
+      min = props.min,
+      max = props.max,
+      defaultValue = props.defaultValue,
+      disabled = props.disabled;
 
   function handleChange(event) {
     setInputValue(event.target.value);
     if (props.onChange) props.onChange(inputValue);
   }
 
-  return /*#__PURE__*/_react.default.createElement("input", {
-    type: inputType,
-    value: inputValue,
-    placeholder: placeholder,
-    name: "input-form",
+  return /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+    type: type,
+    id: "inputId",
+    className: "form-field",
+    placeholder: "type placeholder",
     onChange: handleChange,
-    disabled: disabled
-  });
-}
+    disabled: disabled,
+    min: min,
+    max: max,
+    defaultValue: defaultValue
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "inputId",
+    className: "form-label"
+  }, label));
+};
 
 var _default = Input;
 exports.default = _default;

@@ -3,7 +3,7 @@ import './Input.styles.css';
 
 const Input = (props) => {
   const [inputValue, setInputValue] = useState('')
-  const{type, label, disabled}=props;
+  const{type, label, min, max, defaultValue, disabled}=props;
 
   function handleChange(event){
     setInputValue(event.target.value);
@@ -19,6 +19,9 @@ const Input = (props) => {
         placeholder='type placeholder'
         onChange={handleChange}
         disabled={disabled}
+        min={min}
+        max={max}
+        defaultValue={defaultValue}
       />
       <label htmlFor='inputId' className='form-label'>
         {label}

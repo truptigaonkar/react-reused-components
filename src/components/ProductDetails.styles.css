@@ -1,0 +1,65 @@
+.Wrapper {
+  font-family: 'Bentham', serif;
+  height: 500px;
+  width: 900px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ProductImg {
+  float: left;
+  height: 420px;
+  width: 450px;
+}
+
+.ProductInfo {
+  float: left;
+  height: 420px;
+  width: 450px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.ProductText {
+  height: auto;
+  width: 450px;
+}
+
+h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+p{
+  margin: 0 0 0 38px;
+  padding-bottom: 52px;
+}
+
+h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+span {
+  display: inline-block;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.ProductButtons {
+ 
+  margin-left: 37px;
+  margin-right: 37px;
+  position: relative;
+  display: flex;
+}
+
+

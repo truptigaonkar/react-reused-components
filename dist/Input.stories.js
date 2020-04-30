@@ -4,6 +4,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _react2 = require("@storybook/react");
 
+var _addonKnobs = require("@storybook/addon-knobs");
+
 var _InputREADME = _interopRequireDefault(require("./Input.README.md"));
 
 var _storybookReadme = require("storybook-readme");
@@ -16,7 +18,6 @@ var _theming = require("@storybook/theming");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { select, text, boolean } from '@storybook/addon-knobs';
 var basicTheme = (0, _theming.create)({
   base: 'light',
   brandUrl: 'https://github.com/tuchk4/storybook-readme',
@@ -36,13 +37,27 @@ var basicTheme = (0, _theming.create)({
 }).addDecorator(_storybookReadme.addReadme).add('Text', function () {
   return /*#__PURE__*/_react.default.createElement(_Input.default, {
     type: "text",
-    placeholder: "Enter input text",
-    onChange: (0, _addonActions.action)('Input provided')
+    placeholder: "Enter text",
+    onChange: (0, _addonActions.action)('Input provided'),
+    label: (0, _addonKnobs.text)('Text', 'Label'),
+    disabled: (0, _addonKnobs.boolean)('Disabled', false)
   });
 }).add('Textarea', function () {
   return /*#__PURE__*/_react.default.createElement(_Input.default, {
     type: "textarea",
-    placeholder: "Enter input textarea",
-    onChange: (0, _addonActions.action)('Input provided')
+    placeholder: "Enter text",
+    onChange: (0, _addonActions.action)('Input provided'),
+    label: (0, _addonKnobs.text)('Text', 'Label'),
+    disabled: (0, _addonKnobs.boolean)('Disabled', false)
+  });
+}).add('Number', function () {
+  return /*#__PURE__*/_react.default.createElement(_Input.default, {
+    type: "number",
+    placeholder: "Enter text",
+    onChange: (0, _addonActions.action)('Input provided'),
+    disabled: (0, _addonKnobs.boolean)('Disabled', false),
+    defaultValue: "1",
+    min: "1",
+    max: "100"
   });
 });

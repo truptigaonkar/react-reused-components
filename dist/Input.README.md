@@ -4,6 +4,8 @@
 | ----------- | ------------- | ------------------------------- | ------- |
 | type        | text/textarea | Input type text/textarea        | null    |
 | placeholder | String        | Input text/textarea placeholder | null    |
+| label       | String        | Input text/textarea label       | null    |
+| disabled    | Boolean       | Select disabled state.          | false   |
 
 ## Installation
 
@@ -28,7 +30,13 @@ import React from 'react';
 import { Input } from 'react-reused-components';
 
 function App() {
-  return <Input type='text' placeholder='placeholder' />;
+  return (
+    <Input 
+      type='text' 
+      placeholder='placeholder' 
+      label="Username"
+    />
+  );
 }
 
 export default App;
@@ -41,7 +49,13 @@ import React from 'react';
 import { Input } from 'react-reused-components';
 
 function App() {
-  return <Input type='text' placeholder='placeholder' />;
+  return (
+    <Input 
+      type='textarea' 
+      placeholder='placeholder' 
+      label="Description"
+    />
+  );
 }
 
 export default App;

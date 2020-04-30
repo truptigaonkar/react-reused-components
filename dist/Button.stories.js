@@ -37,14 +37,14 @@ var basicTheme = (0, _theming.create)({
 }).addDecorator(_storybookReadme.addReadme).add('Solid Button', function () {
   return /*#__PURE__*/_react.default.createElement(_Button.default, {
     onClick: (0, _addonActions.action)('Solid Button clicked'),
-    buttonStyle: (0, _addonKnobs.select)('Style', ['btn--primary--solid', 'btn--secondary--solid', 'btn--success--solid', 'btn--warning--solid', 'btn--danger--solid'], 'btn--primary--solid'),
+    buttonStyle: (0, _addonKnobs.select)('Style', ['btn--primary--solid', 'btn--secondary--solid', 'btn--success--solid', 'btn--warning--solid', 'btn--danger--solid', 'btn--info--solid', 'btn--dark--solid'], 'btn--primary--solid'),
     buttonSize: (0, _addonKnobs.select)('Size', ['small', 'large', 'block'], 'small'),
     disabled: (0, _addonKnobs.boolean)('Disabled', false)
   }, (0, _addonKnobs.text)('Text', 'button'));
 }).add('Outline Button', function () {
   return /*#__PURE__*/_react.default.createElement(_Button.default, {
     onClick: (0, _addonActions.action)('Button clicked'),
-    buttonStyle: (0, _addonKnobs.select)('Style', ['btn--primary--outline', 'btn--secondary--outline', 'btn--success--outline', 'btn--warning--outline', 'btn--danger--outline'], 'btn--primary--outline'),
+    buttonStyle: (0, _addonKnobs.select)('Style', ['btn--primary--outline', 'btn--secondary--outline', 'btn--success--outline', 'btn--warning--outline', 'btn--danger--outline', 'btn--info--outline', 'btn--dark--outline'], 'btn--primary--outline'),
     buttonSize: (0, _addonKnobs.select)('Size', ['small', 'large', 'block'], 'small'),
     disabled: (0, _addonKnobs.boolean)('Disabled', false)
   }, (0, _addonKnobs.text)('Text', 'button'));

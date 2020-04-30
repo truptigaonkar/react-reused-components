@@ -4,6 +4,7 @@
     --warning: #f0ad4e;
     --danger: #d9534f;
     --success: #5cb85c;
+    --info:#17a2b8;
     --white: #ffffff;
     --dark: #181717;
   }
@@ -52,6 +53,12 @@
   
   .btn--secondary--solid {
     background-color: var(--secondary);
+    color: var(--white);
+    border: none;
+  }
+
+  .btn--info--solid {
+    background-color: var(--info);
     color: var(--white);
     border: none;
   }
@@ -108,6 +115,30 @@
     background-color: var(--danger);
     color: var(--white);
     border-color: var(--danger);
+  }
+
+  .btn--info--outline {
+    background-color: transparent;
+    color: var(--info);
+    border: 2px solid var(--info);
+  }
+  
+  .btn--info--outline:hover {
+    background-color: var(--info);
+    color: var(--white);
+    border-color: var(--info);
+  }
+
+  .btn--dark--outline {
+    background-color: transparent;
+    color: var(--dark);
+    border: 2px solid var(--dark);
+  }
+  
+  .btn--dark--outline:hover {
+    background-color: var(--dark);
+    color: var(--white);
+    border-color: var(--dark);
   }
   
   .btn--success--solid {

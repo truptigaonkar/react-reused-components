@@ -33,7 +33,8 @@ var Header = function Header(props) {
   }, mainHeading), /*#__PURE__*/_react.default.createElement("p", {
     className: "description"
   }, description), /*#__PURE__*/_react.default.createElement(_Button.Button, {
-    className: "btn-shopNow"
+    buttonStyle: "btn--danger--solid",
+    buttonSize: "large"
   }, children)));
 };
 

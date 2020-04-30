@@ -3,19 +3,19 @@ import './Card.styles.css';
 import { Button } from './Button';
 
 const Card = (props) => {
-    const {productTitle, productPrice, src, alt, children} = props;
+    const {productTitle, productPrice, src, alt, children, onClick  } = props;
   return (
     <div className='product'>
-      <p>
+      <div>
         <img
           className='product-image'
           src={src}
           alt={alt}
         />
-      </p>
-      <p className='product-title'>{productTitle}</p>    
-      <p className='product-price'>{productPrice} SEK</p>
-      <Button buttonStyle="btn--dark--solid" buttonSize="block">{children}</Button>
+      </div>
+      <div className='product-title'>{productTitle}</div>    
+      <div className='product-price'>{productPrice} SEK</div>
+      <Button buttonStyle="btn--dark--solid" buttonSize="block" onClick={onClick}>{children}</Button>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
 import Readme from './Footer.README.md';
 import { addReadme } from 'storybook-readme';
+import { action } from '@storybook/addon-actions';
 import ProductDetails from './ProductDetails';
 import { create } from '@storybook/theming';
 
@@ -39,6 +40,7 @@ storiesOf('Product Details', module)
             defaultValue={1}
             min={1}
             max={100}
+            onClick={action('Button clicked')}
         >
         </ProductDetails>
     );

@@ -24,8 +24,6 @@ npm i https://github.com/truptigaonkar/react-reused-components
 
 ## Example
 
-footer: normal
-
 ```jsx
 import React from 'react';
 import { Card } from 'react-reused-components';

@@ -4,7 +4,7 @@ import Input from './Input';
 import Button from './Button';
 
 const productDetails = (props) => {
-    const {src, productTitle, productPrice, description, defaultValue, min, max}= props;
+    const {src, productTitle, productPrice, description, defaultValue, min, max, onClick}= props;
     return (
         
         <div className='Wrapper'>
@@ -26,7 +26,7 @@ const productDetails = (props) => {
                 max={max}
               />
             </div>
-            <Button buttonStyle="btn--danger--outline" buttonSize="large">
+            <Button buttonStyle="btn--danger--outline" buttonSize="large" onClick={onClick}>
               buy now
             </Button>
           </div>

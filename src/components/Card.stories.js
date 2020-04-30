@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
-import Readme from './Footer.README.md';
+import Readme from './Card.README.md';
 import { addReadme } from 'storybook-readme';
+import { action } from '@storybook/addon-actions';
 import Card from './Card';
 import { create } from '@storybook/theming';
 
@@ -39,6 +40,7 @@ storiesOf('Card', module)
               ) 
             }
             alt="Product Image"
+            onClick={action('Button clicked')}
         > {text('Button', 'Buy Now')}
         </Card>
     );

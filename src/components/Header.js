@@ -13,7 +13,7 @@ const Header = (props) => {
           {mainHeading}
         </h1>
         <p className='description'>{description}</p>
-        <Button className='btn-shopNow'>{children}</Button>
+        <Button buttonStyle='btn--danger--solid' buttonSize='large'>{children}</Button>
       </div>
     </header>
   );

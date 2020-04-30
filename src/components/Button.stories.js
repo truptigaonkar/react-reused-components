@@ -35,6 +35,8 @@ storiesOf('Button', module)
             'btn--success--solid',
             'btn--warning--solid',
             'btn--danger--solid',
+            'btn--info--solid',
+            'btn--dark--solid',
           ],
           'btn--primary--solid'
         )}
@@ -65,6 +67,8 @@ storiesOf('Button', module)
             'btn--success--outline',
             'btn--warning--outline',
             'btn--danger--outline',
+            'btn--info--outline',
+            'btn--dark--outline',
           ],
           'btn--primary--outline'
         )}

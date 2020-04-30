@@ -4,6 +4,8 @@
 | ----------- | ------------- | ------------------------------- | ------- |
 | type        | text/textarea | Input type text/textarea        | null    |
 | placeholder | String        | Input text/textarea placeholder | null    |
+| label       | String        | Input text/textarea label       | null    |
+| disabled    | Boolean       | Select disabled state.          | false   |
 
 ## Installation
 

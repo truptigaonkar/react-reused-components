@@ -7,12 +7,14 @@ const STYLES = [
   'btn--warning--solid',
   'btn--danger--solid',
   'btn--success--solid',
+  'btn--info--solid',
   'btn--dark--solid',
   'btn--primary--outline',
   'btn--secondary--outline',
   'btn--warning--outline',
   'btn--danger--outline',
   'btn--success--outline',
+  'btn--info--outline',
   'btn--dark--outline',
 ];
 

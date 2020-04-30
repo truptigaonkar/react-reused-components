@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-// import { select, text, boolean } from '@storybook/addon-knobs';
+import { select, text, boolean } from '@storybook/addon-knobs';
 import Readme from './Input.README.md';
 import { addReadme } from 'storybook-readme';
 import { action } from '@storybook/addon-actions';
@@ -23,24 +23,14 @@ storiesOf('Input', module)
     readme: { sidebar: Readme, theme: {}, codeTheme: 'github' },
   })
   .addDecorator(addReadme)
-  .add('Text', () => {
+  .add('Default', () => {
     return (
-    <Input 
-      type="text" 
-      placeholder="Enter input text"
-      onChange={action('Input provided')}
-    />
+      <Input
+        type={select('Type', ['text', 'textarea'], 'text')}
+        placeholder='Enter text'
+        onChange={action('Input provided')}
+        label={text('Text', 'Label')}
+        disabled={boolean('Disabled', false)}
+      />
     );
-  })
-  .add('Textarea', () => {
-    return (
-    <Input 
-      type="textarea" 
-      placeholder="Enter input textarea"
-      onChange={action('Input provided')}
-    />
-    );
-  })
-  ;
-
-
+  });

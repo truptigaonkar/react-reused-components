@@ -8,11 +8,11 @@ const Header = (props) => {
     <header>
       <img className='header-bg' src={src} alt={alt} />
       <div className='header-content'>
-        <p className='heading'>{heading}</p>
+        <div className='heading'>{heading}</div>
         <h1 className="main-heading">
           {mainHeading}
         </h1>
-        <p className='description'>{description}</p>
+        <div className='description'>{description}</div>
         <Button buttonStyle='btn--danger--solid' buttonSize='large' onClick={onClick}>{children}</Button>
       </div>
     </header>

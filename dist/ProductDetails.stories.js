@@ -6,9 +6,11 @@ var _react2 = require("@storybook/react");
 
 var _addonKnobs = require("@storybook/addon-knobs");
 
-var _FooterREADME = _interopRequireDefault(require("./Footer.README.md"));
+var _ProductDetailsREADME = _interopRequireDefault(require("./ProductDetails.README.md"));
 
 var _storybookReadme = require("storybook-readme");
+
+var _addonActions = require("@storybook/addon-actions");
 
 var _ProductDetails = _interopRequireDefault(require("./ProductDetails"));
 
@@ -28,7 +30,7 @@ var basicTheme = (0, _theming.create)({
     theme: basicTheme
   },
   readme: {
-    sidebar: _FooterREADME.default,
+    sidebar: _ProductDetailsREADME.default,
     theme: {},
     codeTheme: 'github'
   }
@@ -40,6 +42,7 @@ var basicTheme = (0, _theming.create)({
     description: (0, _addonKnobs.text)('Description', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum'),
     defaultValue: 1,
     min: 1,
-    max: 100
+    max: 100,
+    onClick: (0, _addonActions.action)('Button clicked')
   });
 });

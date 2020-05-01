@@ -5,6 +5,7 @@ import Alert from './Alert';
 import Card from './Card';
 import Header from './Header';
 import ProductDetails from './ProductDetails';
+import Cart from './Cart';
 
-export { Button, Input, Footer, Alert, Card, Header, ProductDetails };
+export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart };
 

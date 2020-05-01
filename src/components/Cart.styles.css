@@ -1,0 +1,63 @@
+.Badge{
+    padding: 12px 20px 11px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #2d6987;
+    border-radius: 21px;
+}
+
+.Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: 1px #a39485 solid;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+thead{
+    font-weight: bold;
+    color: #fff;
+    background: #73685d;
+    font-size: 20px;
+}
+
+th{
+    padding: 1em 0.5em;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+td{
+    padding: 1em 0.5em;
+    vertical-align: middle;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.ImageCartItem{
+    width: 100px;
+}
+
+.CartTotalPrice{
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+}
+
+.ButtonClearCart{
+    margin: 20px;
+}

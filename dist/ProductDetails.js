@@ -22,7 +22,8 @@ var productDetails = function productDetails(props) {
       description = props.description,
       defaultValue = props.defaultValue,
       min = props.min,
-      max = props.max;
+      max = props.max,
+      onClick = props.onClick;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "Wrapper"
   }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
@@ -46,7 +47,8 @@ var productDetails = function productDetails(props) {
     max: max
   })), /*#__PURE__*/_react.default.createElement(_Button.default, {
     buttonStyle: "btn--danger--outline",
-    buttonSize: "large"
+    buttonSize: "large",
+    onClick: onClick
   }, "buy now"))));
 };
 

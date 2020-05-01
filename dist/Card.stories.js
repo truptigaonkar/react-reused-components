@@ -6,9 +6,11 @@ var _react2 = require("@storybook/react");
 
 var _addonKnobs = require("@storybook/addon-knobs");
 
-var _FooterREADME = _interopRequireDefault(require("./Footer.README.md"));
+var _CardREADME = _interopRequireDefault(require("./Card.README.md"));
 
 var _storybookReadme = require("storybook-readme");
+
+var _addonActions = require("@storybook/addon-actions");
 
 var _Card = _interopRequireDefault(require("./Card"));
 
@@ -28,7 +30,7 @@ var basicTheme = (0, _theming.create)({
     theme: basicTheme
   },
   readme: {
-    sidebar: _FooterREADME.default,
+    sidebar: _CardREADME.default,
     theme: {},
     codeTheme: 'github'
   }
@@ -37,6 +39,7 @@ var basicTheme = (0, _theming.create)({
     productTitle: (0, _addonKnobs.text)('Product Title', 'cold fashion'),
     productPrice: (0, _addonKnobs.text)('Product Price', '6666'),
     src: (0, _addonKnobs.select)('Product Image', ["https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412551/E-commerce%20landing%20page/products-showcase/product-1-img_3x.jpg", "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412546/E-commerce%20landing%20page/products-showcase/product-2-img_3x.jpg", "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-3-img_3x.jpg", "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-4-img_3x.jpg"], 'https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412551/E-commerce%20landing%20page/products-showcase/product-1-img_3x.jpg'),
-    alt: "Product Image"
+    alt: "Product Image",
+    onClick: (0, _addonActions.action)('Button clicked')
   }, " ", (0, _addonKnobs.text)('Button', 'Buy Now'));
 });

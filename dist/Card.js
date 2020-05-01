@@ -18,20 +18,22 @@ var Card = function Card(props) {
       productPrice = props.productPrice,
       src = props.src,
       alt = props.alt,
-      children = props.children;
+      children = props.children,
+      onClick = props.onClick;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "product"
-  }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
     className: "product-image",
     src: src,
     alt: alt
-  })), /*#__PURE__*/_react.default.createElement("p", {
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "product-title"
-  }, productTitle), /*#__PURE__*/_react.default.createElement("p", {
+  }, productTitle), /*#__PURE__*/_react.default.createElement("div", {
     className: "product-price"
   }, productPrice, " SEK"), /*#__PURE__*/_react.default.createElement(_Button.Button, {
     buttonStyle: "btn--dark--solid",
-    buttonSize: "block"
+    buttonSize: "block",
+    onClick: onClick
   }, children));
 };
 

@@ -10,6 +10,8 @@ var _HeaderREADME = _interopRequireDefault(require("./Header.README.md"));
 
 var _storybookReadme = require("storybook-readme");
 
+var _addonActions = require("@storybook/addon-actions");
+
 var _Header = _interopRequireDefault(require("./Header"));
 
 var _theming = require("@storybook/theming");
@@ -38,6 +40,7 @@ var basicTheme = (0, _theming.create)({
     alt: "Background Image",
     heading: (0, _addonKnobs.text)('Heading', 'Electronic collection 2020'),
     description: (0, _addonKnobs.text)('Description', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.'),
-    mainHeading: (0, _addonKnobs.text)('Main Heading', 'welcome to brandy unique store')
+    mainHeading: (0, _addonKnobs.text)('Main Heading', 'welcome to brandy unique store'),
+    onClick: (0, _addonActions.action)('Solid Button clicked')
   }, (0, _addonKnobs.text)('Button text', 'Shop Now'));
 });

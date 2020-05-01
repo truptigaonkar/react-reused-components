@@ -45,6 +45,12 @@ Object.defineProperty(exports, "ProductDetails", {
     return _ProductDetails.default;
   }
 });
+Object.defineProperty(exports, "Cart", {
+  enumerable: true,
+  get: function get() {
+    return _Cart.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -59,5 +65,7 @@ var _Card = _interopRequireDefault(require("./Card"));
 var _Header = _interopRequireDefault(require("./Header"));
 
 var _ProductDetails = _interopRequireDefault(require("./ProductDetails"));
+
+var _Cart = _interopRequireDefault(require("./Cart"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -19,22 +19,24 @@ var Header = function Header(props) {
       alt = props.alt,
       heading = props.heading,
       description = props.description,
-      mainHeading = props.mainHeading;
+      mainHeading = props.mainHeading,
+      onClick = props.onClick;
   return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("img", {
     className: "header-bg",
     src: src,
     alt: alt
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "header-content"
-  }, /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "heading"
   }, heading), /*#__PURE__*/_react.default.createElement("h1", {
     className: "main-heading"
-  }, mainHeading), /*#__PURE__*/_react.default.createElement("p", {
+  }, mainHeading), /*#__PURE__*/_react.default.createElement("div", {
     className: "description"
   }, description), /*#__PURE__*/_react.default.createElement(_Button.Button, {
     buttonStyle: "btn--danger--solid",
-    buttonSize: "large"
+    buttonSize: "large",
+    onClick: onClick
   }, children)));
 };
 

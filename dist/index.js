@@ -51,6 +51,12 @@ Object.defineProperty(exports, "Cart", {
     return _Cart.default;
   }
 });
+Object.defineProperty(exports, "Modal", {
+  enumerable: true,
+  get: function get() {
+    return _Modal.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -67,5 +73,7 @@ var _Header = _interopRequireDefault(require("./Header"));
 var _ProductDetails = _interopRequireDefault(require("./ProductDetails"));
 
 var _Cart = _interopRequireDefault(require("./Cart"));
+
+var _Modal = _interopRequireDefault(require("./Modal"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -6,6 +6,7 @@ import Card from './Card';
 import Header from './Header';
 import ProductDetails from './ProductDetails';
 import Cart from './Cart';
+import Modal from './Modal';
 
-export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart };
+export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart, Modal };
 

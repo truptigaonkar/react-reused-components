@@ -2,10 +2,10 @@
 
 ### Props
 
-| Prop       | Type            | Description                                                                                                                   | Default        |
-| ---------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| text       | String          | Provide message                                                                                                               | null           |
-| alertStyle | String, Element | alert--primary / alert--secondary / alert--success / alert--warning / alert--danger / alert--info /alert--white / alert--dark | alert--primary |
+| Prop     | Type   | Description          | Default |
+| -------- | ------ | -------------------- | ------- |
+| content  | String | Content of the modal | null    |
+| children | String | Text of the button   | null    |
 
 ## Installation
 
@@ -28,9 +28,7 @@ import React from 'react';
 import { Modal } from 'react-reused-components';
 
 function App() {
-  return (
-    <Modal>Modal body</Modal>
-  );
+  return <Modal content='This is the modal content'>Open modal</Modal>;
 }
 
 export default App;

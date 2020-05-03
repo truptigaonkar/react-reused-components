@@ -1,6 +1,6 @@
 {
   "name": "react-reused-components",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "main": "dist/index.js",
   "private": false,
   "files": [
@@ -17,10 +17,11 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "react-fontawesome": "^1.7.1",
+    "reusable-react-components": "^1.0.0",
     "storybook-readme": "^5.0.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "start-storybook -p 6006",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

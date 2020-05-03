@@ -1,27 +1,41 @@
-import React, {useState} from 'react';
-import './Modal.styles.css';
+import React, { Component } from 'react';
+import { Modal } from 'reusable-react-components';
 import Button from './Button';
+import './Modal.styles.css';
 
-const Modal = (props) => {
-  const { closeModal } = props;
-
-  return (
+class ModalExample extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    };
+  }
+  onClose() {
+    this.setState({
+      open: false,
+    });
+  }
+  render() {
+    const { children, content } = this.props;
+    return (
       <>
-    <div className='overlay'>
-      <div className='content'>
-        <div style={{ float: 'right' }}>
-          <Button 
-            buttonStyle='btn--dark--outline' 
-            onClick={closeModal}
-          >
-            X
+        <div className='container'>
+          <Button onClick={() => this.setState({ open: true })}>
+            {children}
           </Button>
         </div>
-        {props.children}
-      </div>
-    </div>
-    </>
-  );
-};
+        <div className='modal'>
+          <Modal
+            dialog
+            open={this.state.open}
+            onClose={() => this.onClose()}
+          >
+            {content}
+          </Modal>
+        </div>
+      </>
+    );
+  }
+}
 
-export default Modal;
+export default ModalExample;

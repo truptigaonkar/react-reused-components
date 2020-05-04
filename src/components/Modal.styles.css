@@ -17,5 +17,8 @@
   left: 50%;
   transform: translate(-50%, -130%);
   cursor: pointer;  
+  font-family: 'Bentham', serif;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 

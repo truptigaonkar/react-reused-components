@@ -57,6 +57,18 @@ Object.defineProperty(exports, "Modal", {
     return _Modal.default;
   }
 });
+Object.defineProperty(exports, "Sidebar", {
+  enumerable: true,
+  get: function get() {
+    return _Sidebar.default;
+  }
+});
+Object.defineProperty(exports, "Navbar", {
+  enumerable: true,
+  get: function get() {
+    return _Navbar.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -75,5 +87,9 @@ var _ProductDetails = _interopRequireDefault(require("./ProductDetails"));
 var _Cart = _interopRequireDefault(require("./Cart"));
 
 var _Modal = _interopRequireDefault(require("./Modal"));
+
+var _Sidebar = _interopRequireDefault(require("./Sidebar"));
+
+var _Navbar = _interopRequireDefault(require("./Navbar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

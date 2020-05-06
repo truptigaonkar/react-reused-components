@@ -60,3 +60,23 @@ function App() {
 
 export default App;
 ```
+
+Input: number
+
+```jsx
+import React from 'react';
+import { Input } from 'react-reused-components';
+
+function App() {
+  return (
+    <Input 
+      type='number' 
+      defaultValue= '1'
+      min="1"
+      max="100"
+    />
+  );
+}
+
+export default App;
+```

@@ -8,6 +8,7 @@ import ProductDetails from './ProductDetails';
 import Cart from './Cart';
 import Modal from './Modal';
 import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 
-export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart, Modal, Sidebar };
+export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart, Modal, Sidebar, Navbar };
 

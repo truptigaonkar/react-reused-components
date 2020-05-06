@@ -3,7 +3,7 @@ import React from 'react';
 import './Sidebar.styles.css';
 
 const Sidebar = (props) => {
-    const{header, tab1, tab2, tab3, tab4, tab5, tab6, tab7}=props;
+    const{header, tab1, tab2, tab3, tab4, tab5, tab6, tab7, src}=props;
   return (
     <div>
       <input type='checkbox' id='check' />
@@ -27,7 +27,15 @@ const Sidebar = (props) => {
           <li><a href='#'>{tab7}</a></li>
         </ul>
       </div>
-      <section></section>
+      <section
+        style={{  
+          backgroundImage: "url(" + src + ")",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        </section>
     </div>
   );
 };

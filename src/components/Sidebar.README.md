@@ -29,15 +29,16 @@ import { Sidebar } from 'react-reused-components';
 
 function App() {
   return (
-    <Sidebar 
-      header="My App" 
-        tab1="Dashboard"
-        tab2="Shortcuts"
-        tab3="Overview"
-        tab4="Events"
-        tab5="About"
-        tab6="Services"
-        tab7="Contacts"
+    <Sidebar
+      src='https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg'
+      header='My App'
+      tab1='Dashboard'
+      tab2='Shortcuts'
+      tab3='Overview'
+      tab4='Events'
+      tab5='About'
+      tab6='Services'
+      tab7='Contacts'
     />
   );
 }

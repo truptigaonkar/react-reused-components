@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { text, select } from '@storybook/addon-knobs';
 import Readme from './Sidebar.README.md';
 import { addReadme } from 'storybook-readme';
 import Sidebar from './Sidebar';
@@ -25,6 +25,16 @@ storiesOf('Sidebar', module)
   .add('Default', () => {
     return (
       <Sidebar 
+      src={select(
+        'Background image',
+        [
+          "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg",
+          "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/suit-collections/suit-collection-img_3x.jpg",
+          "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412556/E-commerce%20landing%20page/summer-collection/cold-fashion-man-women_3x.jpg"
+        ],
+        'https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg'
+      ) 
+    }
         header={text('Header text', 'My App')}
         tab1={text('Tab1 text', 'Dashboard')}
         tab2={text('Tab2 text', 'Shortcuts')}

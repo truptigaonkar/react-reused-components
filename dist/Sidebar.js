@@ -20,7 +20,8 @@ var Sidebar = function Sidebar(props) {
       tab4 = props.tab4,
       tab5 = props.tab5,
       tab6 = props.tab6,
-      tab7 = props.tab7;
+      tab7 = props.tab7,
+      src = props.src;
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("input", {
     type: "checkbox",
     id: "check"
@@ -52,7 +53,14 @@ var Sidebar = function Sidebar(props) {
     href: "#"
   }, tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, tab7)))), /*#__PURE__*/_react.default.createElement("section", null));
+  }, tab7)))), /*#__PURE__*/_react.default.createElement("section", {
+    style: {
+      backgroundImage: "url(" + src + ")",
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat'
+    }
+  }));
 };
 
 var _default = Sidebar;

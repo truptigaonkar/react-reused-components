@@ -34,6 +34,7 @@ var basicTheme = (0, _theming.create)({
   }
 }).addDecorator(_storybookReadme.addReadme).add('Default', function () {
   return /*#__PURE__*/_react.default.createElement(_Sidebar.default, {
+    src: (0, _addonKnobs.select)('Background image', ["https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg", "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/suit-collections/suit-collection-img_3x.jpg", "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412556/E-commerce%20landing%20page/summer-collection/cold-fashion-man-women_3x.jpg"], 'https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg'),
     header: (0, _addonKnobs.text)('Header text', 'My App'),
     tab1: (0, _addonKnobs.text)('Tab1 text', 'Dashboard'),
     tab2: (0, _addonKnobs.text)('Tab2 text', 'Shortcuts'),

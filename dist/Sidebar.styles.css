@@ -89,9 +89,6 @@ label #cancel{
   margin-left: 250px;
 }
 section{
-  background: url(https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412561/E-commerce%20landing%20page/header/header-image_3x.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   transition: all .5s;
 }

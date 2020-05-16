@@ -1,32 +1,35 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Input.styles.css';
 
 const Input = (props) => {
-  const [inputValue, setInputValue] = useState('')
-  const{type, label, min, max, defaultValue, disabled}=props;
+  const { type, label } = props;
+  const [state] = useState(true);
+  const [text, updateText] = useState('');
 
-  function handleChange(event){
-    setInputValue(event.target.value);
-    if(props.onChange) props.onChange(inputValue)
+  function handleOnChange(e) {
+    updateText(e.target.value);
   }
 
   return (
-    <form>
-      <input
-        type={type}
-        id='inputId'
-        className='form-field'
-        placeholder='type placeholder'
-        onChange={handleChange}
-        disabled={disabled}
-        min={min}
-        max={max}
-        defaultValue={defaultValue}
-      />
-      <label htmlFor='inputId' className='form-label'>
-        {label}
-      </label>
-    </form>
+    <>
+      <div className='input-container'>
+        {state ? (
+          <input onChange={handleOnChange} required />
+        ) : text ? (
+          <input
+            type={type}
+            onChange={handleOnChange}
+            className='input__active'
+            required
+          />
+        ) : (
+          <input type={type} xonChange={handleOnChange} required />
+        )}
+        <label className='input-label'>
+          <span className='title-placeholder'>{label}</span>
+        </label>
+      </div>
+    </>
   );
 };
 

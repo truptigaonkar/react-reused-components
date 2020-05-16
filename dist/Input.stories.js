@@ -42,22 +42,4 @@ var basicTheme = (0, _theming.create)({
     label: (0, _addonKnobs.text)('Text', 'Label'),
     disabled: (0, _addonKnobs.boolean)('Disabled', false)
   });
-}).add('Textarea', function () {
-  return /*#__PURE__*/_react.default.createElement(_Input.default, {
-    type: "textarea",
-    placeholder: "Enter text",
-    onChange: (0, _addonActions.action)('Input provided'),
-    label: (0, _addonKnobs.text)('Text', 'Label'),
-    disabled: (0, _addonKnobs.boolean)('Disabled', false)
-  });
-}).add('Number', function () {
-  return /*#__PURE__*/_react.default.createElement(_Input.default, {
-    type: "number",
-    placeholder: "Enter text",
-    onChange: (0, _addonActions.action)('Input provided'),
-    disabled: (0, _addonKnobs.boolean)('Disabled', false),
-    defaultValue: "1",
-    min: "1",
-    max: "100"
-  });
 });

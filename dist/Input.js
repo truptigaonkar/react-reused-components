@@ -28,37 +28,41 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var Input = function Input(props) {
-  var _useState = (0, _react.useState)(''),
-      _useState2 = _slicedToArray(_useState, 2),
-      inputValue = _useState2[0],
-      setInputValue = _useState2[1];
-
   var type = props.type,
-      label = props.label,
-      min = props.min,
-      max = props.max,
-      defaultValue = props.defaultValue,
-      disabled = props.disabled;
+      label = props.label;
 
-  function handleChange(event) {
-    setInputValue(event.target.value);
-    if (props.onChange) props.onChange(inputValue);
+  var _useState = (0, _react.useState)(true),
+      _useState2 = _slicedToArray(_useState, 1),
+      state = _useState2[0];
+
+  var _useState3 = (0, _react.useState)(''),
+      _useState4 = _slicedToArray(_useState3, 2),
+      text = _useState4[0],
+      updateText = _useState4[1];
+
+  function handleOnChange(e) {
+    updateText(e.target.value);
   }
 
-  return /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("input", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "input-container"
+  }, state ? /*#__PURE__*/_react.default.createElement("input", {
+    onChange: handleOnChange,
+    required: true
+  }) : text ? /*#__PURE__*/_react.default.createElement("input", {
     type: type,
-    id: "inputId",
-    className: "form-field",
-    placeholder: "type placeholder",
-    onChange: handleChange,
-    disabled: disabled,
-    min: min,
-    max: max,
-    defaultValue: defaultValue
+    onChange: handleOnChange,
+    className: "input__active",
+    required: true
+  }) : /*#__PURE__*/_react.default.createElement("input", {
+    type: type,
+    xonChange: handleOnChange,
+    required: true
   }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "inputId",
-    className: "form-label"
-  }, label));
+    className: "input-label"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "title-placeholder"
+  }, label))));
 };
 
 var _default = Input;

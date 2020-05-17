@@ -39,7 +39,6 @@ var basicTheme = (0, _theming.create)({
     type: "text",
     placeholder: "Enter text",
     onChange: (0, _addonActions.action)('Input provided'),
-    label: (0, _addonKnobs.text)('Text', 'Label'),
-    disabled: (0, _addonKnobs.boolean)('Disabled', false)
+    label: (0, _addonKnobs.text)('Text', 'Label')
   });
 });

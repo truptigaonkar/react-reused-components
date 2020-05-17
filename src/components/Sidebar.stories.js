@@ -36,13 +36,13 @@ storiesOf('Sidebar', module)
       ) 
     }
         header={text('Header text', 'My App')}
-        tab1={text('Tab1 text', 'Dashboard')}
-        tab2={text('Tab2 text', 'Shortcuts')}
-        tab3={text('Tab3 text', 'Overview')}
-        tab4={text('Tab4 text', 'Events')}
-        tab5={text('Tab5 text', 'About')}
-        tab6={text('Tab6 text', 'Services')}
-        tab7={text('Tab7 text', 'Contacts')}
+        tab1={text('Tab1 text', 'Tab1')}
+        tab2={text('Tab2 text', 'Tab2')}
+        tab3={text('Tab3 text', 'Tab3')}
+        tab4={text('Tab4 text', 'Tab4')}
+        tab5={text('Tab5 text', 'Tab5')}
+        tab6={text('Tab6 text', 'Tab6')}
+        tab7={text('Tab7 text', 'Tab7')}
       />
     );
   });

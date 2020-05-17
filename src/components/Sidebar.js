@@ -18,13 +18,13 @@ const Sidebar = (props) => {
       <div class='sidebar'>
         <header>{header}</header>
         <ul>
-          <li><a href='#'>{tab1}</a></li>
-          <li><a href='#'>{tab2}</a></li>
-          <li><a href='#'>{tab3}</a></li>
-          <li><a href='#'>{tab4}</a></li>
-          <li><a href='#'>{tab5}</a></li>
-          <li><a href='#'>{tab6}</a></li>
-          <li><a href='#'>{tab7}</a></li>
+          <li><a href={`${tab1}`}>{tab1}</a></li>
+          <li><a href={`${tab2}`}>{tab2}</a></li>
+          <li><a href={`${tab3}`}>{tab3}</a></li>
+          <li><a href={`${tab4}`}>{tab4}</a></li>
+          <li><a href={`${tab5}`}>{tab5}</a></li>
+          <li><a href={`${tab6}`}>{tab6}</a></li>
+          <li><a href={`${tab7}`}>{tab7}</a></li>
         </ul>
       </div>
       <section

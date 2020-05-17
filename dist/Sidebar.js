@@ -40,19 +40,19 @@ var Sidebar = function Sidebar(props) {
   }, "X")), /*#__PURE__*/_react.default.createElement("div", {
     class: "sidebar"
   }, /*#__PURE__*/_react.default.createElement("header", null, header), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab1)
   }, tab1)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab2)
   }, tab2)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab3)
   }, tab3)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab4)
   }, tab4)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab5)
   }, tab5)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab6)
   }, tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "#"
+    href: "".concat(tab7)
   }, tab7)))), /*#__PURE__*/_react.default.createElement("section", {
     style: {
       backgroundImage: "url(" + src + ")",

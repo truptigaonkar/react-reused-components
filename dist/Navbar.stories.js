@@ -36,10 +36,13 @@ var basicTheme = (0, _theming.create)({
   return /*#__PURE__*/_react.default.createElement(_Navbar.default, {
     navbarStyle: (0, _addonKnobs.select)('Style', ['navbar--primary', 'navbar--secondary', 'navbar--success', 'navbar--warning', 'navbar--danger', 'navbar--dark'], 'navbar--primary'),
     header: (0, _addonKnobs.text)('Header text', 'My App'),
-    Home: (0, _addonKnobs.text)('Home text', 'Home'),
     Tab1: (0, _addonKnobs.text)('Tab1 text', 'Tab1'),
     Tab2: (0, _addonKnobs.text)('Tab2 text', 'Tab2'),
     Tab3: (0, _addonKnobs.text)('Tab3 text', 'Tab3'),
-    Tab4: (0, _addonKnobs.text)('Tab4 text', 'Tab4')
+    Tab4: (0, _addonKnobs.text)('Tab4 text', 'Tab4'),
+    Tab5: (0, _addonKnobs.text)('Tab5 text', 'Tab5'),
+    Tab6: (0, _addonKnobs.text)('Tab6 text', 'Tab6'),
+    Tab7: (0, _addonKnobs.text)('Tab7 text', 'Tab7'),
+    Tab8: (0, _addonKnobs.text)('Tab8 text', 'Tab8')
   });
 });

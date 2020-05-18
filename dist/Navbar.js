@@ -18,6 +18,10 @@ var Navbar = function Navbar(props) {
       Tab2 = props.Tab2,
       Tab3 = props.Tab3,
       Tab4 = props.Tab4,
+      Tab5 = props.Tab5,
+      Tab6 = props.Tab6,
+      Tab7 = props.Tab7,
+      Tab8 = props.Tab8,
       navbarStyle = props.navbarStyle;
   var STYLES = ['navbar--primary', 'navbar--secondary', 'navbar--success', 'navbar--warning', 'navbar--danger', 'navbar--dark'];
   var checkNavbarStyle = STYLES.includes(navbarStyle) ? navbarStyle : STYLES[0];
@@ -37,7 +41,15 @@ var Navbar = function Navbar(props) {
     href: "".concat(Tab3)
   }, Tab3)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "".concat(Tab4)
-  }, Tab4))));
+  }, Tab4)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab5)
+  }, Tab5)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab6)
+  }, Tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab7)
+  }, Tab7)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab8)
+  }, Tab8))));
 };
 
 var _default = Navbar;

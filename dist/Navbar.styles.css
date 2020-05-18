@@ -11,15 +11,16 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
-	margin: 0;
 	min-height: 100vh;
+	margin-left: -15px;
+	padding: 0px;
 }
 
 .header {
 	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-  border-radius: 5px;
-  flex:1;
+	border: 1px solid #a2a2a2; 
+    border-radius: 5px;
+    flex:1;
 }
 
 .navbar--primary {
@@ -52,12 +53,6 @@ body {
   border: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 h2,h3,a {
 	color: #ffffff;
 } 
@@ -72,8 +67,8 @@ a {
 }
 
 .main-nav {
-	padding: 10px 15px;
-  margin-right: 50px;
+	padding-left:0px;
+	margin-right: 50px;
 }
 
 .logo a,

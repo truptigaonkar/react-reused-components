@@ -42,6 +42,9 @@ var basicTheme = (0, _theming.create)({
     Tab4: (0, _addonKnobs.text)('Tab4 text', 'Tab4'),
     Tab5: (0, _addonKnobs.text)('Tab5 text', 'Tab5'),
     Tab6: (0, _addonKnobs.text)('Tab6 text', 'Tab6'),
-    Tab7: (0, _addonKnobs.text)('Tab7 text', 'Tab7')
+    Tab7: (0, _addonKnobs.text)('Tab7 text', 'Tab7'),
+    Tab8: (0, _addonKnobs.text)('Tab8 text', 'Tab8'),
+    Tab9: (0, _addonKnobs.text)('Tab9 text', 'Tab9'),
+    Tab10: (0, _addonKnobs.text)('Tab10 text', 'Tab10')
   });
 });

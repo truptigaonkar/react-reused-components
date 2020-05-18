@@ -7,6 +7,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _reactRouterDom = require("react-router-dom");
+
 require("./Sidebar.styles.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -14,13 +16,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* eslint-disable jsx-a11y/anchor-is-valid */
 var Sidebar = function Sidebar(props) {
   var header = props.header,
-      tab1 = props.tab1,
-      tab2 = props.tab2,
-      tab3 = props.tab3,
-      tab4 = props.tab4,
-      tab5 = props.tab5,
-      tab6 = props.tab6,
-      tab7 = props.tab7,
+      Tab1 = props.Tab1,
+      Tab2 = props.Tab2,
+      Tab3 = props.Tab3,
+      Tab4 = props.Tab4,
+      Tab5 = props.Tab5,
+      Tab6 = props.Tab6,
+      Tab7 = props.Tab7,
       src = props.src;
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("input", {
     type: "checkbox",
@@ -39,21 +41,43 @@ var Sidebar = function Sidebar(props) {
     id: "cancel"
   }, "X")), /*#__PURE__*/_react.default.createElement("div", {
     class: "sidebar"
-  }, /*#__PURE__*/_react.default.createElement("header", null, header), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab1)
-  }, tab1)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab2)
-  }, tab2)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab3)
-  }, tab3)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab4)
-  }, tab4)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab5)
-  }, tab5)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab6)
-  }, tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
-    href: "".concat(tab7)
-  }, tab7)))), /*#__PURE__*/_react.default.createElement("section", {
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement("header", null, header), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab1)
+  }, Tab1)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab2)
+  }, Tab2)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab3)
+  }, Tab3)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab4)
+  }, Tab4)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab5)
+  }, Tab5)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab6)
+  }, Tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "".concat(Tab7)
+  }, Tab7))), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "".concat(Tab1),
+    component: Tab1
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab2),
+    component: Tab2
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab3),
+    component: Tab3
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab4),
+    component: Tab4
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab5),
+    component: Tab5
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab6),
+    component: Tab6
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "".concat(Tab7),
+    component: Tab7
+  }))), /*#__PURE__*/_react.default.createElement("section", {
     style: {
       backgroundImage: "url(" + src + ")",
       backgroundPosition: 'center',

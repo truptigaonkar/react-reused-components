@@ -39,10 +39,11 @@ storiesOf('Navbar', module)
       ) 
     } 
         header={text('Header text', 'My App')}
-        tab1={text('Tab1 text', 'Home')}
-        tab2={text('Tab2 text', 'About')}
-        tab3={text('Tab3 text', 'Portfolio')}
-        tab4={text('Tab4 text', 'Contact')}
+        Home={text('Home text', 'Home')}
+        Tab1={text('Tab1 text', 'Tab1')}
+        Tab2={text('Tab2 text', 'Tab2')}
+        Tab3={text('Tab3 text', 'Tab3')}
+        Tab4={text('Tab4 text', 'Tab4')}
       />
     );
   });

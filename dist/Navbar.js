@@ -36,6 +36,8 @@ var Navbar = function Navbar(props) {
   }, header)), /*#__PURE__*/_react.default.createElement("ul", {
     className: "main-nav"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "/"
+  }, "Home")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "".concat(Tab1)
   }, Tab1)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "".concat(Tab2)

@@ -47,6 +47,8 @@ storiesOf('Navbar', module)
         Tab6={text('Tab6 text', 'Tab6')}
         Tab7={text('Tab7 text', 'Tab7')}
         Tab8={text('Tab8 text', 'Tab8')}
+        Tab9={text('Tab9 text', 'Tab9')}
+        Tab10={text('Tab10 text', 'Tab10')}
       />
     );
   });

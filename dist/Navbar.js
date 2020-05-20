@@ -22,6 +22,8 @@ var Navbar = function Navbar(props) {
       Tab6 = props.Tab6,
       Tab7 = props.Tab7,
       Tab8 = props.Tab8,
+      Tab9 = props.Tab9,
+      Tab10 = props.Tab10,
       navbarStyle = props.navbarStyle;
   var STYLES = ['navbar--primary', 'navbar--secondary', 'navbar--success', 'navbar--warning', 'navbar--danger', 'navbar--dark'];
   var checkNavbarStyle = STYLES.includes(navbarStyle) ? navbarStyle : STYLES[0];
@@ -49,7 +51,11 @@ var Navbar = function Navbar(props) {
     href: "".concat(Tab7)
   }, Tab7)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "".concat(Tab8)
-  }, Tab8))));
+  }, Tab8)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab9)
+  }, Tab9)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "".concat(Tab10)
+  }, Tab10))));
 };
 
 var _default = Navbar;

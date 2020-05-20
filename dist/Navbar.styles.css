@@ -12,12 +12,12 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	min-height: 100vh;
-	margin-left: -15px;
+	/* margin-left: -15px;
+	margin-top: -10px; */
 	padding: 0px;
 }
 
 .header {
-	padding-bottom: .5em;
 	border: 1px solid #a2a2a2; 
     border-radius: 5px;
     flex:1;

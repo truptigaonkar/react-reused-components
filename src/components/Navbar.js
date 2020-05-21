@@ -22,7 +22,6 @@ const Navbar = (props) => {
     <header className={`alert ${checkNavbarStyle} header`}>
 		  <h1 className="logo"><a href={`/`}>{header}</a></h1>
       <ul className="main-nav">
-          <li><a href='/'>Home</a></li>
           <li><a href={`${Tab1}`}>{Tab1}</a></li>
           <li><a href={`${Tab2}`}>{Tab2}</a></li>
           <li><a href={`${Tab3}`}>{Tab3}</a></li>

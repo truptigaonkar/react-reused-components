@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { select, text, boolean } from '@storybook/addon-knobs';
 import Readme from './Input.README.md';
 import { addReadme } from 'storybook-readme';
 import { action } from '@storybook/addon-actions';
@@ -26,11 +26,35 @@ storiesOf('Input', module)
   .add('Text', () => {
     return (
       <Input
-        type='text'
-        placeholder='Enter text'
-        onChange={action('Input provided')}
         label={text('Text', 'Label')}
+        type='text'
+        placeholder='This is the placeholder'
+        onChange={action('Input provided')}
+        disabled={boolean('Disabled', false)}	
       />
     );
   })
-  ;
+  .add('Textarea', () => {
+    return (
+      <Input
+        label={text('Text', 'Label')}
+        type='textarea'
+        placeholder='This is the placeholder'
+        onChange={action('Input provided')}
+        disabled={boolean('Disabled', false)}	
+      />
+    );
+  })
+  .add('Number', () => {
+    return (
+      <Input
+        type='number'
+        onChange={action('Input provided')}
+        defaultValue='1'
+        min='1'
+        max='100'
+        disabled={boolean('Disabled', false)}
+        value='2'	
+      />
+    );
+  });

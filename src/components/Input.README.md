@@ -35,6 +35,8 @@ function App() {
       type='text' 
       placeholder='placeholder' 
       label="Username"
+      min={1}
+      max={100}
     />
   );
 }

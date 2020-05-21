@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, text, boolean } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import Readme from './Input.README.md';
 import { addReadme } from 'storybook-readme';
 import { action } from '@storybook/addon-actions';
@@ -54,7 +54,6 @@ storiesOf('Input', module)
         min='1'
         max='100'
         disabled={boolean('Disabled', false)}
-        value='2'	
       />
     );
   });

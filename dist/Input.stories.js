@@ -36,9 +36,27 @@ var basicTheme = (0, _theming.create)({
   }
 }).addDecorator(_storybookReadme.addReadme).add('Text', function () {
   return /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: (0, _addonKnobs.text)('Text', 'Label'),
     type: "text",
-    placeholder: "Enter text",
+    placeholder: "This is the placeholder",
     onChange: (0, _addonActions.action)('Input provided'),
-    label: (0, _addonKnobs.text)('Text', 'Label')
+    disabled: (0, _addonKnobs.boolean)('Disabled', false)
+  });
+}).add('Textarea', function () {
+  return /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: (0, _addonKnobs.text)('Text', 'Label'),
+    type: "textarea",
+    placeholder: "This is the placeholder",
+    onChange: (0, _addonActions.action)('Input provided'),
+    disabled: (0, _addonKnobs.boolean)('Disabled', false)
+  });
+}).add('Number', function () {
+  return /*#__PURE__*/_react.default.createElement(_Input.default, {
+    type: "number",
+    onChange: (0, _addonActions.action)('Input provided'),
+    defaultValue: "1",
+    min: "1",
+    max: "100",
+    disabled: (0, _addonKnobs.boolean)('Disabled', false)
   });
 });

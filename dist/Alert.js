@@ -7,11 +7,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-require("./Alert.styles.css");
+require("./Breadcrumbs.styles.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Alert = function Alert(props) {
+var Breadcrumbs = function Breadcrumbs(props) {
   var children = props.children,
       alertStyle = props.alertStyle;
   var STYLES = ['alert--primary', 'alert--secondary', 'alert--success', 'alert--warning', 'alert--danger', 'alert--info', 'alert--white', 'alert--dark'];
@@ -21,5 +21,5 @@ var Alert = function Alert(props) {
   }, children));
 };
 
-var _default = Alert;
+var _default = Breadcrumbs;
 exports.default = _default;

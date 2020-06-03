@@ -22,16 +22,16 @@ const Navbar = (props) => {
     <header className={`alert ${checkNavbarStyle} header`}>
 		  <h1 className="logo"><a href={`/`}>{header}</a></h1>
       <ul className="main-nav">
-          <li><a href={`${Tab1}`}>{Tab1}</a></li>
-          <li><a href={`${Tab2}`}>{Tab2}</a></li>
-          <li><a href={`${Tab3}`}>{Tab3}</a></li>
-          <li><a href={`${Tab4}`}>{Tab4}</a></li>
-          <li><a href={`${Tab5}`}>{Tab5}</a></li>
-          <li><a href={`${Tab6}`}>{Tab6}</a></li>
-          <li><a href={`${Tab7}`}>{Tab7}</a></li>
-          <li><a href={`${Tab8}`}>{Tab8}</a></li>
-          <li><a href={`${Tab9}`}>{Tab9}</a></li>
-          <li><a href={`${Tab10}`}>{Tab10}</a></li>
+          <li><a className='linkA' href={`${Tab1}`}>{Tab1}</a></li>
+          <li><a className='linkA' href={`${Tab2}`}>{Tab2}</a></li>
+          <li><a className='linkA' href={`${Tab3}`}>{Tab3}</a></li>
+          <li><a className='linkA' href={`${Tab4}`}>{Tab4}</a></li>
+          <li><a className='linkA' href={`${Tab5}`}>{Tab5}</a></li>
+          <li><a className='linkA' href={`${Tab6}`}>{Tab6}</a></li>
+          <li><a className='linkA' href={`${Tab7}`}>{Tab7}</a></li>
+          <li><a className='linkA' href={`${Tab8}`}>{Tab8}</a></li>
+          <li><a className='linkA' href={`${Tab9}`}>{Tab9}</a></li>
+          <li><a className='linkA' href={`${Tab10}`}>{Tab10}</a></li>
       </ul>
 	  </header> 
   );

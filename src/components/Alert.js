@@ -1,7 +1,7 @@
 import React from 'react';
-import './Alert.styles.css'
+import './Breadcrumbs.styles.css'
 
-const Alert = props => {
+const Breadcrumbs = props => {
   const { children, alertStyle } = props;
 
   const STYLES = [
@@ -30,4 +30,4 @@ const Alert = props => {
   );
 };
 
-export default Alert;
+export default Breadcrumbs;

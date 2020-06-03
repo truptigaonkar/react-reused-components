@@ -53,9 +53,9 @@ body {
   border: none;
 }
 
-h2,h3,a {
+/* h2,h3,a {
 	color: #ffffff;
-} 
+}  */
 
 a {
 	text-decoration: none;
@@ -79,12 +79,12 @@ a {
 	display: block;
 }
 
-.main-nav a {
+.main-nav .linkA {
 	color: #ffffff;
 	font-size: .99em;
 }
 
-.main-nav a:hover {
+.main-nav .linkA:hover {
 	color: #718daa;
 }
 

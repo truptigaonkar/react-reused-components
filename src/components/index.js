@@ -10,6 +10,7 @@ import Modal from './Modal';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import Textfield from './Textfield';
+import Breadcrumbs from './Breadcrumbs';
 
-export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart, Modal, Sidebar, Navbar, Textfield };
+export { Button, Input, Footer, Alert, Card, Header, ProductDetails, Cart, Modal, Sidebar, Navbar, Textfield, Breadcrumbs };
 

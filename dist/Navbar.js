@@ -36,24 +36,34 @@ var Navbar = function Navbar(props) {
   }, header)), /*#__PURE__*/_react.default.createElement("ul", {
     className: "main-nav"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab1)
   }, Tab1)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab2)
   }, Tab2)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab3)
   }, Tab3)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab4)
   }, Tab4)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab5)
   }, Tab5)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab6)
   }, Tab6)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab7)
   }, Tab7)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab8)
   }, Tab8)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab9)
   }, Tab9)), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "linkA",
     href: "".concat(Tab10)
   }, Tab10))));
 };

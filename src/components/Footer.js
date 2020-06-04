@@ -23,9 +23,11 @@ const Footer = (props) => {
     : STYLES1[0];
 
   return (
-    <footer className={`footer ${checkFooterStyle} footer ${checkFooterFixed}`}>
-      <p className='FooterText'>{children}</p>
-    </footer>
+    <>
+      <footer className={`footer ${checkFooterStyle} footer ${checkFooterFixed}`}>
+        <p className='FooterText'>{children}</p>
+      </footer>
+    </>
   );
 };
 

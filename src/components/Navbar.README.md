@@ -32,10 +32,10 @@ function App() {
     <Navbar
       navbarStyle='navbar--dark'
       header='My App'
-      tab1='Home'
-      tab2='About'
-      tab3='Portfolio'
-      tab4='Contact'
+      Tab1='Home'
+      Tab2='About'
+      Tab3='Portfolio'
+      Tab4='Contact'
     />
   );
 }

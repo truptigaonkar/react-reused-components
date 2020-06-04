@@ -75,12 +75,6 @@ Object.defineProperty(exports, "Textfield", {
     return _Textfield.default;
   }
 });
-Object.defineProperty(exports, "Breadcrumbs", {
-  enumerable: true,
-  get: function get() {
-    return _Breadcrumbs.default;
-  }
-});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -105,7 +99,5 @@ var _Sidebar = _interopRequireDefault(require("./Sidebar"));
 var _Navbar = _interopRequireDefault(require("./Navbar"));
 
 var _Textfield = _interopRequireDefault(require("./Textfield"));
-
-var _Breadcrumbs = _interopRequireDefault(require("./Breadcrumbs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
